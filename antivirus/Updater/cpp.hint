@@ -1,0 +1,2 @@
+#define UPDATER_API __declspec(dllexport)
+#define UPDATER_API __declspec(dllimport)

@@ -1,0 +1,2 @@
+#define TRANSLATOR_API __declspec(dllexport)
+#define TRANSLATOR_API __declspec(dllimport)

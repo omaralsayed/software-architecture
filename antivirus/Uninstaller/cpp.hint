@@ -1,0 +1,2 @@
+#define UNINSTALLER_API __declspec(dllexport)
+#define UNINSTALLER_API __declspec(dllimport)
