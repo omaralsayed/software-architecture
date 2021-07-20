@@ -1,0 +1,2 @@
+#define CHANNEL_API __declspec(dllexport)
+#define CHANNEL_API __declspec(dllimport)

@@ -1,0 +1,2 @@
+#define SUBSCRIBER_API __declspec(dllexport)
+#define SUBSCRIBER_API __declspec(dllimport)
