@@ -1,0 +1,76 @@
+\hypertarget{class_channel}{}\doxysection{Channel Class Reference}
+\label{class_channel}\index{Channel@{Channel}}
+
+
+{\ttfamily \#include $<$Channel.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_channel_a7711cff79fc82c68a42287ca7671407e}{Channel}} (\mbox{\hyperlink{class_channel_builder}{Channel\+Builder}} $\ast$c)
+\item 
+void \mbox{\hyperlink{class_channel_ac21fc3e792d8997619b7dd2a1f99cce3}{add\+Subscriber}} (\mbox{\hyperlink{class_subscriber}{Subscriber}} $\ast$s)
+\item 
+void \mbox{\hyperlink{class_channel_a260aaf7249867f4c5fe09bf970705df1}{remove\+Subscriber}} (\mbox{\hyperlink{class_subscriber}{Subscriber}} $\ast$s)
+\item 
+void \mbox{\hyperlink{class_channel_a53a6173d817aa7670416d74bc35947ab}{Upload\+New\+Video}} (std\+::string video)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_channel_a7711cff79fc82c68a42287ca7671407e}\label{class_channel_a7711cff79fc82c68a42287ca7671407e}} 
+\index{Channel@{Channel}!Channel@{Channel}}
+\index{Channel@{Channel}!Channel@{Channel}}
+\doxysubsubsection{\texorpdfstring{Channel()}{Channel()}}
+{\footnotesize\ttfamily Channel\+::\+Channel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_channel_builder}{Channel\+Builder}} $\ast$}]{c }\end{DoxyParamCaption})}
+
+Constructor of \mbox{\hyperlink{class_channel}{Channel}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & is the \mbox{\hyperlink{class_channel_builder}{Channel\+Builder}} holding parameter for \mbox{\hyperlink{class_channel}{Channel}} Constructor \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_channel_ac21fc3e792d8997619b7dd2a1f99cce3}\label{class_channel_ac21fc3e792d8997619b7dd2a1f99cce3}} 
+\index{Channel@{Channel}!addSubscriber@{addSubscriber}}
+\index{addSubscriber@{addSubscriber}!Channel@{Channel}}
+\doxysubsubsection{\texorpdfstring{addSubscriber()}{addSubscriber()}}
+{\footnotesize\ttfamily void Channel\+::add\+Subscriber (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_subscriber}{Subscriber}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+Add the subscriber to the collection inside \mbox{\hyperlink{class_channel}{Channel}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & is the pointer to a Subsciber. When called, the add\+Subscriber will add that pointer to its set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_channel_a260aaf7249867f4c5fe09bf970705df1}\label{class_channel_a260aaf7249867f4c5fe09bf970705df1}} 
+\index{Channel@{Channel}!removeSubscriber@{removeSubscriber}}
+\index{removeSubscriber@{removeSubscriber}!Channel@{Channel}}
+\doxysubsubsection{\texorpdfstring{removeSubscriber()}{removeSubscriber()}}
+{\footnotesize\ttfamily void Channel\+::remove\+Subscriber (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_subscriber}{Subscriber}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+Remove the subscriber to the collection inside \mbox{\hyperlink{class_channel}{Channel}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & is the pointer to the \mbox{\hyperlink{class_subscriber}{Subscriber}} we want to remove. When called, the remove\+Subscriber will remove that pointer from its set. If the \mbox{\hyperlink{class_subscriber}{Subscriber}} is not there even before the call, nothing will happen \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_channel_a53a6173d817aa7670416d74bc35947ab}\label{class_channel_a53a6173d817aa7670416d74bc35947ab}} 
+\index{Channel@{Channel}!UploadNewVideo@{UploadNewVideo}}
+\index{UploadNewVideo@{UploadNewVideo}!Channel@{Channel}}
+\doxysubsubsection{\texorpdfstring{UploadNewVideo()}{UploadNewVideo()}}
+{\footnotesize\ttfamily void Channel\+::\+Upload\+New\+Video (\begin{DoxyParamCaption}\item[{std\+::string}]{video }\end{DoxyParamCaption})}
+
+Upload the new video to the channel.
+
+This function will call the update function from all subscribers within its set of subscribers 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Channel/\mbox{\hyperlink{_channel_8h}{Channel.\+h}}\item 
+Channel/\mbox{\hyperlink{_channel_8cpp}{Channel.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,162 @@
+\hypertarget{class_channel_builder}{}\doxysection{Channel\+Builder Class Reference}
+\label{class_channel_builder}\index{ChannelBuilder@{ChannelBuilder}}
+
+
+{\ttfamily \#include $<$Channel.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_channel_builder_a41183edfc0aa4276f18cfdd7b856b5c5}{Channel\+Builder}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor of \mbox{\hyperlink{class_channel_builder}{Channel\+Builder}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_channel_builder_ab72e2a33be76399c91facf1b8f462bf1}{Set\+Type}} (\mbox{\hyperlink{_channel_8h_aacb79576e5cf053ee9c93cb9d665e32b}{TYPES}} channel\+\_\+type)
+\item 
+void \mbox{\hyperlink{class_channel_builder_a091c79150ff66a7165a27610601e7d6b}{Set\+Email}} (std\+::string email)
+\item 
+void \mbox{\hyperlink{class_channel_builder_a85f64acf99c21348e324dd081d5a092e}{Set\+Password}} (std\+::string password)
+\item 
+void \mbox{\hyperlink{class_channel_builder_a684a1121f8e54d79f492c08f4f6b5bfb}{Set\+ID}} (int identification\+\_\+number)
+\item 
+void \mbox{\hyperlink{class_channel_builder_a1e47224e06955c56316609c8f0230d71}{Set\+Credit\+Card\+Info}} (std\+::string credit\+\_\+card\+\_\+info)
+\item 
+\mbox{\hyperlink{_channel_8h_aacb79576e5cf053ee9c93cb9d665e32b}{TYPES}} \mbox{\hyperlink{class_channel_builder_a1d1a49d1f10f83a0ebfe63699a9e35a0}{Get\+Type}} ()
+\item 
+std\+::string \mbox{\hyperlink{class_channel_builder_af3e5a3b6513711da361655821e2e3fbf}{Get\+Email}} ()
+\item 
+std\+::string \mbox{\hyperlink{class_channel_builder_aab10434b41f7e5188a8f7c0fec045a2b}{Get\+Password}} ()
+\item 
+int \mbox{\hyperlink{class_channel_builder_a52d5aee62e54187328887d7231aebb9e}{Get\+ID}} ()
+\item 
+std\+::string \mbox{\hyperlink{class_channel_builder_a157673d249721c3e8ab1d523f8ba4f7b}{Get\+Credit\+Card\+Info}} ()
+\item 
+\mbox{\hyperlink{class_channel}{Channel}} $\ast$ \mbox{\hyperlink{class_channel_builder_ab0fb044e34551d7274ab7c7f21e2972b}{build}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_channel_builder_a41183edfc0aa4276f18cfdd7b856b5c5}\label{class_channel_builder_a41183edfc0aa4276f18cfdd7b856b5c5}} 
+\index{ChannelBuilder@{ChannelBuilder}!ChannelBuilder@{ChannelBuilder}}
+\index{ChannelBuilder@{ChannelBuilder}!ChannelBuilder@{ChannelBuilder}}
+\doxysubsubsection{\texorpdfstring{ChannelBuilder()}{ChannelBuilder()}}
+{\footnotesize\ttfamily Channel\+Builder\+::\+Channel\+Builder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor of \mbox{\hyperlink{class_channel_builder}{Channel\+Builder}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_channel_builder_ab0fb044e34551d7274ab7c7f21e2972b}\label{class_channel_builder_ab0fb044e34551d7274ab7c7f21e2972b}} 
+\index{ChannelBuilder@{ChannelBuilder}!build@{build}}
+\index{build@{build}!ChannelBuilder@{ChannelBuilder}}
+\doxysubsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_channel}{Channel}} $\ast$ Channel\+Builder\+::build (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the pointer of a new built channel.
+
+Depends on channel types, some parameters are required while some are not.
+
+For example, with \href{./_channel_8h.html\#aacb79576e5cf053ee9c93cb9d665e32b}{\texttt{ TYPES\+::\+BASIC\+\_\+\+BUILD}}, email, password, and identification number are required but not credit card information. The other possibility is with \href{./_channel_8h.html\#aacb79576e5cf053ee9c93cb9d665e32b}{\texttt{ TYPES\+::\+PREMIUM\+\_\+\+BUILD}}. Email, password, and credit card information are required but not identification number. If there is any missing required parameter, the function will throw an exception. \mbox{\Hypertarget{class_channel_builder_a157673d249721c3e8ab1d523f8ba4f7b}\label{class_channel_builder_a157673d249721c3e8ab1d523f8ba4f7b}} 
+\index{ChannelBuilder@{ChannelBuilder}!GetCreditCardInfo@{GetCreditCardInfo}}
+\index{GetCreditCardInfo@{GetCreditCardInfo}!ChannelBuilder@{ChannelBuilder}}
+\doxysubsubsection{\texorpdfstring{GetCreditCardInfo()}{GetCreditCardInfo()}}
+{\footnotesize\ttfamily std\+::string Channel\+Builder\+::\+Get\+Credit\+Card\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the current credit card information of the channel we are going to build in form of a string. \mbox{\Hypertarget{class_channel_builder_af3e5a3b6513711da361655821e2e3fbf}\label{class_channel_builder_af3e5a3b6513711da361655821e2e3fbf}} 
+\index{ChannelBuilder@{ChannelBuilder}!GetEmail@{GetEmail}}
+\index{GetEmail@{GetEmail}!ChannelBuilder@{ChannelBuilder}}
+\doxysubsubsection{\texorpdfstring{GetEmail()}{GetEmail()}}
+{\footnotesize\ttfamily std\+::string Channel\+Builder\+::\+Get\+Email (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the current email of the channel we are going to build in form of a string. \mbox{\Hypertarget{class_channel_builder_a52d5aee62e54187328887d7231aebb9e}\label{class_channel_builder_a52d5aee62e54187328887d7231aebb9e}} 
+\index{ChannelBuilder@{ChannelBuilder}!GetID@{GetID}}
+\index{GetID@{GetID}!ChannelBuilder@{ChannelBuilder}}
+\doxysubsubsection{\texorpdfstring{GetID()}{GetID()}}
+{\footnotesize\ttfamily int Channel\+Builder\+::\+Get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the current identification\+\_\+number of the channel we are going to build in form of an integer. \mbox{\Hypertarget{class_channel_builder_aab10434b41f7e5188a8f7c0fec045a2b}\label{class_channel_builder_aab10434b41f7e5188a8f7c0fec045a2b}} 
+\index{ChannelBuilder@{ChannelBuilder}!GetPassword@{GetPassword}}
+\index{GetPassword@{GetPassword}!ChannelBuilder@{ChannelBuilder}}
+\doxysubsubsection{\texorpdfstring{GetPassword()}{GetPassword()}}
+{\footnotesize\ttfamily std\+::string Channel\+Builder\+::\+Get\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the current password of the channel we are going to build in form of a string. \mbox{\Hypertarget{class_channel_builder_a1d1a49d1f10f83a0ebfe63699a9e35a0}\label{class_channel_builder_a1d1a49d1f10f83a0ebfe63699a9e35a0}} 
+\index{ChannelBuilder@{ChannelBuilder}!GetType@{GetType}}
+\index{GetType@{GetType}!ChannelBuilder@{ChannelBuilder}}
+\doxysubsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_channel_8h_aacb79576e5cf053ee9c93cb9d665e32b}{TYPES}} Channel\+Builder\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the current type of the channel we are going to build.
+
+Return value is either \href{./_channel_8h.html\#aacb79576e5cf053ee9c93cb9d665e32b}{\texttt{ TYPES\+::\+BASIC\+\_\+\+BUILD}} or \href{./_channel_8h.html\#aacb79576e5cf053ee9c93cb9d665e32b}{\texttt{ TYPES\+::\+PREMIUM\+\_\+\+BUILD}} \mbox{\Hypertarget{class_channel_builder_a1e47224e06955c56316609c8f0230d71}\label{class_channel_builder_a1e47224e06955c56316609c8f0230d71}} 
+\index{ChannelBuilder@{ChannelBuilder}!SetCreditCardInfo@{SetCreditCardInfo}}
+\index{SetCreditCardInfo@{SetCreditCardInfo}!ChannelBuilder@{ChannelBuilder}}
+\doxysubsubsection{\texorpdfstring{SetCreditCardInfo()}{SetCreditCardInfo()}}
+{\footnotesize\ttfamily void Channel\+Builder\+::\+Set\+Credit\+Card\+Info (\begin{DoxyParamCaption}\item[{std\+::string}]{credit\+\_\+card\+\_\+info }\end{DoxyParamCaption})}
+
+Set the Credit Card information of the channel we are going to build.
+
+If the channel\textquotesingle{}s type is TYPES\+::\+BASIC, this method is not required 
+\begin{DoxyParams}{Parameters}
+{\em credit\+\_\+card\+\_\+info} & is a string representing your credit card information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_channel_builder_a091c79150ff66a7165a27610601e7d6b}\label{class_channel_builder_a091c79150ff66a7165a27610601e7d6b}} 
+\index{ChannelBuilder@{ChannelBuilder}!SetEmail@{SetEmail}}
+\index{SetEmail@{SetEmail}!ChannelBuilder@{ChannelBuilder}}
+\doxysubsubsection{\texorpdfstring{SetEmail()}{SetEmail()}}
+{\footnotesize\ttfamily void Channel\+Builder\+::\+Set\+Email (\begin{DoxyParamCaption}\item[{std\+::string}]{email }\end{DoxyParamCaption})}
+
+Set the email of the channel we are going to build.
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & the email string of the channel \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_channel_builder_a684a1121f8e54d79f492c08f4f6b5bfb}\label{class_channel_builder_a684a1121f8e54d79f492c08f4f6b5bfb}} 
+\index{ChannelBuilder@{ChannelBuilder}!SetID@{SetID}}
+\index{SetID@{SetID}!ChannelBuilder@{ChannelBuilder}}
+\doxysubsubsection{\texorpdfstring{SetID()}{SetID()}}
+{\footnotesize\ttfamily void Channel\+Builder\+::\+Set\+ID (\begin{DoxyParamCaption}\item[{int}]{identification\+\_\+number }\end{DoxyParamCaption})}
+
+Set the identification number of the channel we are going to build.
+
+If the channel\textquotesingle{}s type is \href{./_channel_8h.html\#aacb79576e5cf053ee9c93cb9d665e32b}{\texttt{ TYPES\+::\+PREMIUM\+\_\+\+BUILD}}, this method is not required 
+\begin{DoxyParams}{Parameters}
+{\em identification} & is the integer representing ID such as Driver License or Passport. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_channel_builder_a85f64acf99c21348e324dd081d5a092e}\label{class_channel_builder_a85f64acf99c21348e324dd081d5a092e}} 
+\index{ChannelBuilder@{ChannelBuilder}!SetPassword@{SetPassword}}
+\index{SetPassword@{SetPassword}!ChannelBuilder@{ChannelBuilder}}
+\doxysubsubsection{\texorpdfstring{SetPassword()}{SetPassword()}}
+{\footnotesize\ttfamily void Channel\+Builder\+::\+Set\+Password (\begin{DoxyParamCaption}\item[{std\+::string}]{password }\end{DoxyParamCaption})}
+
+Set the password of the channel we are going to build.
+
+
+\begin{DoxyParams}{Parameters}
+{\em password} & the password string of the channel \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_channel_builder_ab72e2a33be76399c91facf1b8f462bf1}\label{class_channel_builder_ab72e2a33be76399c91facf1b8f462bf1}} 
+\index{ChannelBuilder@{ChannelBuilder}!SetType@{SetType}}
+\index{SetType@{SetType}!ChannelBuilder@{ChannelBuilder}}
+\doxysubsubsection{\texorpdfstring{SetType()}{SetType()}}
+{\footnotesize\ttfamily void Channel\+Builder\+::\+Set\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_channel_8h_aacb79576e5cf053ee9c93cb9d665e32b}{TYPES}}}]{channel\+\_\+type }\end{DoxyParamCaption})}
+
+Set the type of the channel we are going to build into either \href{./_channel_8h.html\#aacb79576e5cf053ee9c93cb9d665e32b}{\texttt{ TYPES\+::\+BASIC\+\_\+\+BUILD}} or \href{./_channel_8h.html\#aacb79576e5cf053ee9c93cb9d665e32b}{\texttt{ TYPES\+::\+PREMIUM\+\_\+\+BUILD}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+\_\+type} & is either \href{./_channel_8h.html\#aacb79576e5cf053ee9c93cb9d665e32b}{\texttt{ TYPES\+::\+BASIC\+\_\+\+BUILD}} or \href{./_channel_8h.html\#aacb79576e5cf053ee9c93cb9d665e32b}{\texttt{ TYPES\+::\+PREMIUM\+\_\+\+BUILD}} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Channel/\mbox{\hyperlink{_channel_8h}{Channel.\+h}}\item 
+Channel/\mbox{\hyperlink{_channel_8cpp}{Channel.\+cpp}}\end{DoxyCompactItemize}
